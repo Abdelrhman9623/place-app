@@ -24,7 +24,8 @@ class PlaceDetiles extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10,),
-          Text(selectedPlace.title, textAlign: TextAlign.center,),
+//           Text(selectedPlace.title, textAlign: TextAlign.center,),
+          Text(selectedPlace.address, textAlign: TextAlign.center,),
           SizedBox(height: 10,),
           FlatButton.icon(
             icon: Icon(Icons.visibility),
