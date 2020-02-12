@@ -4,6 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../models/place.dart';
 
 class MapScreen extends StatefulWidget {
+  static const routeName = './map-screen';  
   final PlaceLocation initialLocation;
   final bool isSelected;
   MapScreen({
@@ -45,10 +46,13 @@ class _MapScreenState extends State<MapScreen> {
           zoom: 16
         ),
         onTap: widget.isSelected ? _selectLocation : null,
-        markers: _pickedLocation == null ? null : {
+        markers: (_pickedLocation == null && widget.isSelected) ? null : {
           Marker(
             markerId: MarkerId('m1'),
-            position: _pickedLocation,
+            position: _pickedLocation ?? LatLng(
+              widget.initialLocation.latitude,
+              widget.initialLocation.longitude,
+            ),
           ),
         },
       ),
