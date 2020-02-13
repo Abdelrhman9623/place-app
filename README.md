@@ -14,3 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## THIS FOR APP TO WORK DON'T FORGET DO THIS flutter pub get
+YOU MUST ADD GOOGLE API AND KET 
+ITS WORK FOR ANDROID BUT IF YOU RUNNIOG ON IOS YOU MUST ADD SOME FOUNCTIONS ON APPDELEGATE.M FILE 
