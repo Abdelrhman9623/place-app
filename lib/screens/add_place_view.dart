@@ -27,6 +27,7 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
   }
   void _savePlace() {
     if (_titleController.text.isEmpty || _pickedImage == null || _pickedLocation == null) {
+      // 
       return;
     }
     Provider.of<GreatPlace>(context, listen: false).addPlace(
